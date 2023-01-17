@@ -1,0 +1,18 @@
+{
+    "title": "My projects and achievements",
+    "subtitle": "Portfolio",
+    "scribe": "Scribe",
+    "scribeDescription": "I built the landing page for Scribe, a London-based data automation FinTech.",
+    "projetdemocratia": "ProjetDemocratia",
+    "projetdemocratiaDescription": "I built the website of the association ProjetDemocratia, with publications and management of articles and comments.",
+    "datachallenge": "DataChallenge",
+    "datachallengeDescription": "This is the web application I built for the Datachallenge IA Pau March 2022.",
+    "lagamair": "LagamAir",
+    "lagamairDescription": "LagamAir is an Angular web application for flight management built in the school context.",
+    "capitalgame": "Jeu des Capitales",
+    "capitalgameDescription": "It is a game that consists of finding the capitals of countries according to their continent with a point system.",
+    "helene": "Hélène Brandily",
+    "heleneDescription": "I built a website for Hélène Brandily, to develop her business as a freelance web writer.",
+    "ekkodesign": "Ekko Design",
+    "ekkodesignDescription": "I built a landing page for Australe Concrete and Nova Crete for their new product Ekko."
+}

@@ -1,0 +1,11 @@
+{
+    "title": "Prizes and awards",
+    "subtitle": "Distinctions",
+    "results" : "Winner",
+    "datachallenge": "DataChallenge IA Pau 2022",
+    "datachallengeSubject": "GreenAI",
+    "datachallengeDescription": "The challenge was to take an existing web application and improve its interface and templates, both technically and environmentally. In 48 hours, we had to make the GreenAI search engine both more efficient and more environmentally friendly. On my side, I significantly improved the existing Django web implementation, and I implemented the Carbon scripts that allowed to calculate and display the ecological impact of the queries we made.",
+    "databattle": "Databattle IA Pau 2022",
+    "databattleSubject": "Vivajob",
+    "databattleDescription": "The challenge was to build a matching solution between companies and job seekers. The solution had to be original, efficient, but also as ecological as possible. My personal contribution, as a web developer, was to make a Vuejs web application to visualise the data. Via a simple and uncluttered interface, I took care of the API calls on our algorithms to make dynamic chartjs graphics impactful."
+}
