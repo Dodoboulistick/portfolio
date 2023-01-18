@@ -1,6 +1,6 @@
 {
     "title": "Mon parcours professionnel",
-    "ubtitle": "Expériences",
+    "subtitle": "Expériences",
     "capgemini": "Capgemini, Toulouse, France - Ingénieur Full-Stack",
     "capgeminiDates": "Sept 2022 - Aujourd'hui",
     "capgeminiDescription": "Je travaille sur une application web qui permet à des centaines de compagnies aériennes de faciliter contrats et gestion de flottes, avec React et ExpressTS.",
