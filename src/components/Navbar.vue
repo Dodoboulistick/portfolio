@@ -1,5 +1,5 @@
 <template>
-<nav class="py-5 bg-gray-100/70 fixed top-0 w-full">
+<nav class="py-5 bg-gray-100/70 backdrop-blur-lg fixed top-0 w-full z-[999]">
     <div class="container flex items-center justify-between">
         <div>
             <a href="#">
@@ -26,7 +26,7 @@
                 <div class="w-[1px] h-5 bg-gray-900"></div>
             </li>
             <li>
-                <a href="#"><img src="src/assets/fr.svg" class="h-5 rounded-sm" /></a>
+                <img @click="handleClickOnFlag" :src="`src/assets/${flag}.svg`" class="h-5 rounded-sm cursor-pointer" />
             </li>
             <li>
                 <i class="bi bi-moon text-2xl nav-link"></i>
@@ -40,15 +40,30 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 export default defineComponent({
   name: 'Navbar',
   setup() {
-    const { t } = useI18n();
+    const { t, locale } = useI18n();
+    const flag = ref(locale.value === 'fr' ? 'en' : 'fr');
 
-    return { t };
+    const handleClickOnFlag = () => {
+      if(locale.value === 'fr') {
+        locale.value = 'en';
+        flag.value = 'fr';
+      } else {
+        locale.value = 'fr';
+        flag.value = 'en';
+      }
+    };
+
+    return {
+        t,
+        flag,
+        handleClickOnFlag
+    };
   },
 });
 </script>

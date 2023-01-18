@@ -8,8 +8,8 @@
                     {{ t('hero.subtitle') }}
                 </p>
                 <div class="flex gap-10 font-medium">
-                    <a href="#" class="text-white/90 bg-gradient-to-r from-blue-600 to-blue-500 rounded-md py-2 px-10 shadow-lg shadow-blue-600/30 hover:shadow-none transition-all duration-300">Découvrir</a>
-                    <a href="#" class="bg-gray-50 rounded-md py-2 px-10 shadow-lg hover:shadow-none transition-all duration-300">Contact</a>
+                    <a href="#" class="text-white/90 bg-gradient-to-r from-blue-600 to-blue-500 rounded-md py-2 px-10 shadow-lg shadow-blue-600/30 hover:shadow-none transition-all duration-300">{{ t('hero.cta') }}</a>
+                    <a href="#" class="bg-gray-50 rounded-md py-2 px-10 shadow-lg hover:shadow-none transition-all duration-300">{{ t('hero.contact') }}</a>
                 </div>
             </div>
             <img src="src/assets/me-unsuit.png" class="h-[500px]" alt="hero" />
