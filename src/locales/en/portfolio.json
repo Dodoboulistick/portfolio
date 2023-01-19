@@ -1,18 +1,48 @@
 {
     "title": "My projects and achievements",
     "subtitle": "Portfolio",
-    "scribe": "Scribe",
-    "scribeDescription": "I built the landing page for Scribe, a London-based data automation FinTech.",
-    "projetdemocratia": "ProjetDemocratia",
-    "projetdemocratiaDescription": "I built the website of the association ProjetDemocratia, with publications and management of articles and comments.",
-    "datachallenge": "DataChallenge",
-    "datachallengeDescription": "This is the web application I built for the Datachallenge IA Pau March 2022.",
-    "lagamair": "LagamAir",
-    "lagamairDescription": "LagamAir is an Angular web application for flight management built in the school context.",
-    "capitalgame": "Jeu des Capitales",
-    "capitalgameDescription": "It is a game that consists of finding the capitals of countries according to their continent with a point system.",
-    "helene": "Hélène Brandily",
-    "heleneDescription": "I built a website for Hélène Brandily, to develop her business as a freelance web writer.",
-    "ekkodesign": "Ekko Design",
-    "ekkodesignDescription": "I built a landing page for Australe Concrete and Nova Crete for their new product Ekko."
+    "cta": "Visit",
+    "items": [
+        {
+            "title": "Scribe",
+            "description": "I built the landing page for Scribe, a London-based data automation FinTech.",
+            "link": "https://scribelabs.ai/"
+        },
+        {
+            "title": "ProjetDemocratia",
+            "description": "I built the website of the association ProjetDemocratia, with publications and management of articles and comments.",
+            "link": "https://projetdemocratia.fr/"
+        },
+        {
+            "title": "DataChallenge",
+            "description": "This is the web application I built for the Datachallenge IA Pau March 2022.",
+            "link": "https://dorian-mailhe.fr/datachallenge/"
+        },
+        {
+            "title": "LagamAir",
+            "description": "LagamAir is an Angular web application for flight management built in the school context.",
+            "link": "https://lagamair-angular.firebaseapp.com/"
+        },
+        {
+            "title": "Capital Game",
+            "description": "It is a game that consists of finding the capitals of countries according to their continent with a point system.",
+            "link": "https://jeudescapitales.fr/"
+        },
+        {
+            "title": "Hélène Brandily",
+            "description": "I built a website for Hélène Brandily, to develop her business as a freelance web writer.",
+            "link": "https://helenebrandily.com/"
+        },
+        {
+            "title": "Ekko Design",
+            "description": "I built a landing page for Australe Concrete and Nova Crete for their new product Ekko.",
+            "link": "https://nova-crete.com/ekkodesign/"
+        },
+        {
+            "title": "Ekko Design",
+            "description": "I built a landing page for Australe Concrete and Nova Crete for their new product Ekko.",
+            "link": "https://nova-crete.com/ekkodesign/"
+        }
+
+    ]
 }

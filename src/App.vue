@@ -3,6 +3,8 @@
   <Hero />
   <Skills />
   <Experience />
+  <Portfolio />
+  <Education />
 </template>
 
 <script lang="ts">
@@ -11,6 +13,8 @@ import Navbar from './components/Navbar.vue'
 import Hero from './components/Hero.vue'
 import Skills from './components/Skills.vue'
 import Experience from './components/Experience.vue'
+import Portfolio from './components/Portfolio.vue'
+import Education from './components/Education.vue'
 
 export default {
   name: 'App',
@@ -18,7 +22,9 @@ export default {
     Navbar,
     Hero,
     Skills,
-    Experience
+    Experience,
+    Portfolio,
+    Education
   },
   setup() {
     const { locale, t } = useI18n();
