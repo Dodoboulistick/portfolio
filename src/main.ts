@@ -18,6 +18,8 @@ import frnavbar from './locales/fr/navbar.json'
 import ennavbar from './locales/en/navbar.json'
 import frportfolio from './locales/fr/portfolio.json'
 import enportfolio from './locales/en/portfolio.json'
+import frfooter from './locales/fr/footer.json'
+import enfooter from './locales/en/footer.json'
 
 
 // internationalization configurations
@@ -32,7 +34,8 @@ const i18n = createI18n({
             hero: frhero,
             skills: frskills,
             navbar: frnavbar,
-            portfolio: frportfolio
+            portfolio: frportfolio,
+            footer: frfooter
         },
         en: {
             contact: encontact,
@@ -42,7 +45,8 @@ const i18n = createI18n({
             hero: enhero,
             skills: enskills,
             navbar: ennavbar,
-            portfolio: enportfolio
+            portfolio: enportfolio,
+            footer: enfooter
         }
     }
 })

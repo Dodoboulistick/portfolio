@@ -6,8 +6,8 @@
         </div>
 
         <div class="flex justify-evenly py-20">
-            <div v-for="item in items" class="w-1/4 bg-gray-50 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-                <img :src="item.image" :alt="`Logo ${item.name}`" class="h-24 mx-auto" />
+            <div v-for="item in items" class="w-1/4 bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+                <img :src="isDark ? item.imageDark : item.imageLight" :alt="`Logo ${item.name}`" class="h-24 mx-auto" :class="{'opacity-90' : isDark}" />
                 <div class="mb-6 mt-10">
                     <h4 class="text-center text-blue-600 font-medium">{{ t(item.date) }}</h4>
                     <h2 class="text-center font-semibold text-3xl">{{ t(item.name) }}</h2>
@@ -22,11 +22,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useDark } from '@vueuse/core';
 
 export default defineComponent({
   name: 'Education',
   setup() {
     const { t } = useI18n();
+    const isDark = useDark();
 
     const items = [
         {
@@ -34,18 +36,20 @@ export default defineComponent({
             type: 'education.fermatType',
             description: 'education.fermatDescription',
             date: '2018 - 2020',
-            image: 'src/assets/logo-fermat-black.svg'
+            imageDark: 'src/assets/logo-fermat-white.svg',
+            imageLight: 'src/assets/logo-fermat-black.svg'
         },
         {
             name: 'CY Tech',
             type: 'education.CYTechType',
             description: 'education.CYTechDescription',
             date: '2020 - 2023',
-            image: 'src/assets/logo-cytech-black.png'
+            imageDark: 'src/assets/logo-cytech-white.png',
+            imageLight: 'src/assets/logo-cytech-black.png'
         }
     ]
 
-    return { t, items };
+    return { t, items, isDark };
   },
 });
 </script>

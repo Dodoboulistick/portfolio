@@ -6,12 +6,12 @@
     </div>
 
     <div class="flex justify-evenly py-20">
-            <div v-for="item in items" class="w-1/3 bg-gray-50 rounded-xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <div v-for="item in items" class="w-1/3 bg-gray-50 dark:bg-gray-800 rounded-xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <img src="src/assets/gold-medal.png" alt="Gold trophy" class="h-32 mx-auto" />
                 <div class="mb-6 mt-10 uppercase text-center">
                   <h2 class="font-bold text-2xl">{{ t(item.title) }}</h2>
                   <h3 class="text-xl font-medium">Sujet {{ t(item.subject) }}</h3>
-                  <h4 class="text-amber-500 font-medium tracking-[0.5rem]">Vainqueur</h4>
+                  <h4 class="text-amber-500 font-medium tracking-[0.5rem]">{{ t('distinctions.results') }}</h4>
                 </div>
                 <p class="opacity-70">{{ t(item.description) }}</p>
             </div>

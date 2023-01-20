@@ -13,7 +13,7 @@
               <i class="bi bi-star-fill text-blue-600 mx-2 text-xl"></i>
             </div>
             <h2 class="text-center text-4xl font-semibold">{{ t('skills.advanced') }}</h2>
-            <hr class="h-[1px] border-gray-900/70 w-1/2 mx-auto my-6" />
+            <hr class="h-[1px] border-gray-900/70 dark:border-white/70 w-1/2 mx-auto my-6" />
             <ul class="list-disc text-lg">
               <li v-for="skill of skills.advanced" class="opacity-70">{{ skill }}</li>
             </ul>
@@ -25,7 +25,7 @@
               <i class="bi bi-star-fill text-blue-600 mx-2 text-xl"></i>
             </div>
             <h2 class="text-center text-4xl font-semibold">{{ t('skills.intermediate') }}</h2>
-            <hr class="h-[1px] border-gray-900/70 w-1/2 mx-auto my-6" />
+            <hr class="h-[1px] border-gray-900/70 dark:border-white/70 w-1/2 mx-auto my-6" />
             <ul class="list-disc text-lg">
               <li v-for="skill of skills.intermediate" class="opacity-70">{{ skill }}</li>
             </ul>
@@ -36,7 +36,7 @@
               <i class="bi bi-star-fill text-blue-600 mx-2 text-xl"></i>
             </div>
             <h2 class="text-center text-4xl font-semibold">{{ t('skills.basic') }}</h2>
-            <hr class="h-[1px] border-gray-900/70 w-1/2 mx-auto my-6" />
+            <hr class="h-[1px] border-gray-900/70 dark:border-white/70 w-1/2 mx-auto my-6" />
             <ul class="list-disc text-lg pl-5">
               <li v-for="skill of skills.notions" class="opacity-70">{{ skill }}</li>
             </ul>
