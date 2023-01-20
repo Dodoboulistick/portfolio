@@ -1,5 +1,5 @@
 <template>
-    <section class="container py-10">
+    <section class="container py-10" id="experience">
         <div>
             <h2 class="subtitle">{{ t('experience.subtitle') }}</h2>
             <h1 class="title">{{ t('experience.title') }}</h1>

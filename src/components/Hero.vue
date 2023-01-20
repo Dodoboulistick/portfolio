@@ -1,5 +1,5 @@
 <template>
-    <section class="h-screen">
+    <section class="h-screen" id="hero">
         <div class="container h-full flex items-center justify-around">
             <div class="w-1/2">
                 <h2 class="text-5xl font-bold">{{ t('hero.title') }}</h2>

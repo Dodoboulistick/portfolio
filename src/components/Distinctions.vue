@@ -1,5 +1,22 @@
 <template>
+  <section class="container py-10" id="distinctions">
+    <div>
+        <h2 class="subtitle">{{ t('distinctions.subtitle') }}</h2>
+        <h1 class="title">{{ t('distinctions.title') }}</h1>
+    </div>
 
+    <div class="flex justify-evenly py-20">
+            <div v-for="item in items" class="w-1/3 bg-gray-50 rounded-xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300">
+                <img src="src/assets/gold-medal.png" alt="Gold trophy" class="h-32 mx-auto" />
+                <div class="mb-6 mt-10 uppercase text-center">
+                  <h2 class="font-bold text-2xl">{{ t(item.title) }}</h2>
+                  <h3 class="text-xl font-medium">Sujet {{ t(item.subject) }}</h3>
+                  <h4 class="text-amber-500 font-medium tracking-[0.5rem]">Vainqueur</h4>
+                </div>
+                <p class="opacity-70">{{ t(item.description) }}</p>
+            </div>
+        </div>
+  </section>  
 </template>
 
 <script lang="ts">
@@ -13,18 +30,14 @@ export default defineComponent({
 
     const items = [
         {
-            name: 'Pierre de Fermat',
-            type: 'education.fermatType',
-            description: 'education.fermatDescription',
-            date: '2018 - 2020',
-            image: 'src/assets/logo-fermat-black.svg'
+            title: 'distinctions.datachallenge',
+            subject: 'distinctions.datachallengeSubject',
+            description: 'distinctions.datachallengeDescription',
         },
         {
-            name: 'CY Tech',
-            type: 'education.CYTechType',
-            description: 'education.CYTechDescription',
-            date: '2020 - 2023',
-            image: 'src/assets/logo-cytech-black.png'
+            title: 'distinctions.databattle',
+            subject: 'distinctions.databattleSubject',
+            description: 'distinctions.databattleDescription',
         }
     ]
 

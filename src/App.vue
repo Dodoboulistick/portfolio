@@ -5,6 +5,8 @@
   <Experience />
   <Portfolio />
   <Education />
+  <Distinctions />
+  <Contact />
 </template>
 
 <script lang="ts">
@@ -15,6 +17,8 @@ import Skills from './components/Skills.vue'
 import Experience from './components/Experience.vue'
 import Portfolio from './components/Portfolio.vue'
 import Education from './components/Education.vue'
+import Distinctions from './components/Distinctions.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -24,7 +28,9 @@ export default {
     Skills,
     Experience,
     Portfolio,
-    Education
+    Education,
+    Distinctions,
+    Contact
   },
   setup() {
     const { locale, t } = useI18n();

@@ -1,11 +1,11 @@
 {
-    "title": "Prix et récompenses",
-    "subtitle": "Distinctions",
-    "results" : "Vainqueur",
-    "datachallenge": "DataChallenge IA Pau 2022",
-    "datachallengeSubject": "GreenAI",
-    "datachallengeDescription": "Le challenge consistait à reprendre une application web existante pour en améliorer l'interface et les modèles, à la fois sur un plan technique et écologique. En 48h, nous devions donc rendre le moteur de recherche GreenAI à la fois plus efficace et plus respectueux de l'environnement. De mon côté, j'ai significativement amélioré l'implémentation web Django déjà existante, et j'ai implémenté les scripts Carbon qui permettaient de calculer et afficher l'impact écologique des requêtes que nous faisions.",
-    "databattle": "Databattle IA Pau 2022",
-    "databattleSubject": "Vivajob",
-    "databattleDescription": "Le challenge consistait à construire une solution de matching entre des entreprises et des chercheurs d'emplois. La solution devait être originale, efficace, mais aussi le plus écologique possible. Ma contribution personnelle, comme développeur web, a été de faire une application web Vuejs pour visualiser les données. Via une interface simple et épurée, je m'occupais des appels d'API sur nos algorithmes pour rendre des graphiques chartjs dynamiques impactants."
+  "title": "Prix et récompenses",
+  "subtitle": "Distinctions",
+  "results": "Vainqueur",
+  "datachallenge": "DataChallenge IA Pau 2022",
+  "datachallengeSubject": "GreenAI",
+  "datachallengeDescription": "Le challenge consistait à reprendre une application web existante pour en améliorer l'interface et les modèles, à la fois sur un plan technique et écologique. De mon côté, j'ai significativement amélioré l'implémentation web Django déjà existante, et j'ai implémenté les scripts Carbon qui permettaient de calculer et afficher l'impact écologique des requêtes que nous faisions.",
+  "databattle": "Databattle IA Pau 2022",
+  "databattleSubject": "Vivajob",
+  "databattleDescription": "Le challenge consistait à construire une solution de matching entre des entreprises et des chercheurs d'emplois. La solution devait être originale, efficace, mais aussi le plus écologique possible. Ma contribution personnelle a été de faire une application web Vuejs pour visualiser les données. Je m'occupais aussi des appels d'API sur nos algorithmes pour rendre des graphiques chartjs dynamiques impactants."
 }

@@ -1,11 +1,11 @@
 <template>
-    <section class="container py-10">
+    <section class="container py-10" id="education">
         <div>
             <h2 class="subtitle">{{ t('education.subtitle') }}</h2>
             <h1 class="title">{{ t('education.title') }}</h1>
         </div>
 
-        <div class="flex justify-around py-20">
+        <div class="flex justify-evenly py-20">
             <div v-for="item in items" class="w-1/4 bg-gray-50 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <img :src="item.image" :alt="`Logo ${item.name}`" class="h-24 mx-auto" />
                 <div class="mb-6 mt-10">
