@@ -1,6 +1,6 @@
 <template>
     <section class="bg-gray-900">
-        <div class="container py-3 text-center">
+        <div class="container py-3 text-center px-5">
             <p class="text-white/80">
                 {{ t('footer.content') }} - Dorian Mailhé {{ new Date().getFullYear() }} - {{ t('footer.rights') }}
             </p>

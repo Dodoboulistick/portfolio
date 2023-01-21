@@ -1,12 +1,12 @@
 <template>
-    <section class="container py-10" id="education">
+    <section class="container py-10 px-5 lg:px-0" id="education">
         <div>
             <h2 class="subtitle">{{ t('education.subtitle') }}</h2>
             <h1 class="title">{{ t('education.title') }}</h1>
         </div>
 
-        <div class="flex justify-evenly py-20">
-            <div v-for="item in items" class="w-1/4 bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div class="flex flex-col sm:flex-row justify-evenly py-20 gap-5 lg:gap-0">
+            <div v-for="item in items" class="lg:w-1/3 xl:w-1/4 bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <img :src="isDark ? item.imageDark : item.imageLight" :alt="`Logo ${item.name}`" class="h-24 mx-auto" :class="{'opacity-90' : isDark}" />
                 <div class="mb-6 mt-10">
                     <h4 class="text-center text-blue-600 font-medium">{{ t(item.date) }}</h4>

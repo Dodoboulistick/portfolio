@@ -1,5 +1,5 @@
 <template>
-<nav class="py-5 bg-gray-100/70 dark:bg-gray-900/90 backdrop-blur-lg fixed top-0 w-full z-[999]">
+<nav class="p-5 bg-gray-100/70 dark:bg-gray-900/90 backdrop-blur-lg fixed top-0 w-full z-[999]">
     <div class="container flex items-center justify-between">
         <div>
             <a href="#">

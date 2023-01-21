@@ -1,47 +1,56 @@
 {
-    "title": "Mes projets et réalisations",
-    "subtitle": "Portfolio",
-    "cta": "Visiter",
-    "items" : [
-        {
-            "title": "Scribe",
-            "description": "J'ai construit la landing page de Scribe, une FinTech londonienne d'automatisation de données.",
-            "link": "https://scribelabs.ai/"
-        },
-        {
-            "title": "ProjetDemocratia",
-            "description": "J'ai construit le site de l'association Projet Democratia, avec publications et gestion d'articles et commentaires.",
-            "link": "https://projetdemocratia.fr/"
-        },
-        {
-            "title": "DataChallenge",
-            "description": "C'est l'application web que j'ai construit dans le cadre du Datachallenge IA Pau mars 2022.",
-            "link": "https://dorian-mailhe.fr/datachallenge/"
-        },
-        {
-            "title": "LagamAir",
-            "description": "LagamAir est une application web Angular de gestions de vols construite dans le cadre scolaire.",
-            "link": "https://lagamair-angular.firebaseapp.com/"
-        },
-        {
-            "title": "Jeu des Capitales",
-            "description": "C'est un jeu qui consiste à trouver les capitales de pays selon leur continent avec un système de points.",
-            "link": "https://jeudescapitales.fr/"
-        },
-        {
-            "title": "Hélène Brandily",
-            "description": "J'ai construit un site web pour Hélène Brandily, pour développer son activité de rédactrice web freelance.",
-            "link": "https://helenebrandily.com/"
-        },
-        {
-            "title": "Ekko Design",
-            "description": "J'ai construit une landing page pour Australe Concrete et Nova Crete pour leur nouveau produit Ekko.",
-            "link": "https://nova-crete.com/ekkodesign/"
-        },
-        {
-            "title": "Ekko Design",
-            "description": "J'ai construit une landing page pour Australe Concrete et Nova Crete pour leur nouveau produit Ekko.",
-            "link": "https://nova-crete.com/ekkodesign/"
-        }
-    ]
+  "title": "Mes projets et réalisations",
+  "subtitle": "Portfolio",
+  "cta": "Visiter",
+  "preview": "Cliquez sur une carte pour voir l'aperçu",
+  "items": [
+    {
+      "title": "Scribe",
+      "description": "J'ai construit la landing page de Scribe, une FinTech londonienne d'automatisation de données.",
+      "link": "https://scribelabs.ai/",
+      "image": "scribe"
+    },
+    {
+      "title": "ProjetDemocratia",
+      "description": "J'ai construit le site de l'association Projet Democratia, avec publications et gestion d'articles et commentaires.",
+      "link": "https://projetdemocratia.fr/",
+      "image": "projetdemocratia"
+    },
+    {
+      "title": "DataChallenge",
+      "description": "C'est l'application web que j'ai construit dans le cadre du Datachallenge IA Pau mars 2022.",
+      "link": "https://dorian-mailhe.fr/datachallenge/",
+      "image": "datachallenge"
+    },
+    {
+      "title": "LagamAir",
+      "description": "LagamAir est une application web Angular de gestions de vols construite dans le cadre scolaire.",
+      "link": "https://lagamair-angular.firebaseapp.com/",
+      "image": "lagamair"
+    },
+    {
+      "title": "Jeu des Capitales",
+      "description": "C'est un jeu qui consiste à trouver les capitales de pays selon leur continent avec un système de points.",
+      "link": "https://jeudescapitales.fr/",
+      "image": "capitalgame"
+    },
+    {
+      "title": "Hélène Brandily",
+      "description": "J'ai construit un site web pour Hélène Brandily, pour développer son activité de rédactrice web freelance.",
+      "link": "https://helenebrandily.com/",
+      "image": "helenebrandily"
+    },
+    {
+      "title": "Ekko Design",
+      "description": "J'ai construit une landing page pour Australe Concrete et Nova Crete pour leur nouveau produit Ekko.",
+      "link": "https://nova-crete.com/ekkodesign/",
+      "image": "ekkodesign"
+    },
+    {
+      "title": "Odile Mailhé",
+      "description": "J'ai construit une landing page pour Odile Mailhé pour sa nouvelle activité de rédactrice web freelance.",
+      "link": "http://odilemailhe.fr/",
+      "image": "odilemailhe"
+    }
+  ]
 }
