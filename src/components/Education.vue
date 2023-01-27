@@ -9,8 +9,8 @@
             <div v-for="item in items" class="lg:w-1/3 xl:w-1/4 bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <img :src="isDark ? item.imageDark : item.imageLight" :alt="`Logo ${item.name}`" class="h-24 mx-auto" :class="{'opacity-90' : isDark}" />
                 <div class="mb-6 mt-10">
-                    <h4 class="text-center text-blue-600 font-medium">{{ t(item.date) }}</h4>
-                    <h2 class="text-center font-semibold text-3xl">{{ t(item.name) }}</h2>
+                    <h4 class="text-center text-blue-600 font-medium">{{ item.date }}</h4>
+                    <h2 class="text-center font-semibold text-3xl">{{ item.name }}</h2>
                     <h3 class="text-center text-lg font-medium capitalize">{{ t(item.type) }}</h3>
                 </div>
                 <p class="opacity-70">{{ t(item.description) }}</p>
