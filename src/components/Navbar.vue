@@ -3,8 +3,8 @@
     <div class="container flex items-center justify-between">
         <div>
             <a href="#">
-                <img v-if="isDark" src="src/assets/logoDMblack.svg" class="h-7 opacity-90" alt="logo" />
-                <img v-else src="src/assets/logoDMwhite.svg" class="h-7" alt="logo" />
+                <img v-if="isDark" src="/src/assets/logoDMblack.svg" class="h-7 opacity-90" alt="logo" />
+                <img v-else src="/src/assets/logoDMwhite.svg" class="h-7" alt="logo" />
             </a>
         </div>
         <div class="flex items-center">
@@ -16,7 +16,7 @@
             <div class="w-[1px] h-5 bg-gray-900 dark:bg-white/90 mx-5 hidden lg:block"></div>
             <ul class="flex items-center gap-5 font-medium ">
                 <li>
-                    <img @click="handleClickOnFlag" :src="`src/assets/${flag}.svg`" class="h-5 rounded-sm cursor-pointer" />
+                    <img @click="handleClickOnFlag" :src="flag" class="h-5 rounded-sm cursor-pointer" />
                 </li>
                 <li>
                     <i @click="toggleDark()" class="bi text-2xl nav-link" :class="[isDark ? 'bi-sun' : 'bi-moon']"></i>
@@ -44,6 +44,8 @@
 import { defineComponent, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useDark, useToggle } from '@vueuse/core';
+import gbFlag from '/src/assets/en.svg';
+import frFlag from '/src/assets/fr.svg';
 
 export default defineComponent({
   name: 'Navbar',
@@ -51,7 +53,7 @@ export default defineComponent({
     const { t, locale } = useI18n();
     const isDark = useDark();
     const toggleDark = useToggle(isDark);
-    const flag = ref(locale.value === 'fr' ? 'en' : 'fr');
+    const flag = ref(locale.value === frFlag ? gbFlag : frFlag);
     const toggleNav = ref(false);
 
     const navItems = [
@@ -67,10 +69,10 @@ export default defineComponent({
     const handleClickOnFlag = () => {
       if(locale.value === 'fr') {
         locale.value = 'en';
-        flag.value = 'fr';
+        flag.value = frFlag;
       } else {
         locale.value = 'fr';
-        flag.value = 'en';
+        flag.value = gbFlag;
       }
     };
 

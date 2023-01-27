@@ -32,6 +32,12 @@
 import { defineComponent, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useDark } from '@vueuse/core';
+import capgeminiLogo from '/src/assets/logo-capgemini.png';
+import scribeLogo from '/src/assets/logo-scribe.svg';
+import dmLogoBlack from '/src/assets/logoDMblack.svg';
+import dmLogoWhite from '/src/assets/logoDMwhite.svg';
+import totalLogo from '/src/assets/logo-totalenergies.svg';
+import projetdemocratiaLogo from '/src/assets/logo-projetdemocratia.png';
 
 export default defineComponent({
   name: 'Experience',
@@ -40,7 +46,7 @@ export default defineComponent({
     const isDark = useDark();
 
     watch(isDark, (value) => {
-        value ? items.value[4].logo = 'src/assets/logoDMblack.svg' : items.value[4].logo = 'src/assets/logoDMwhite.svg';
+        value ? items.value[4].logo = '/src/assets/logoDMblack.svg' : items.value[4].logo = '/src/assets/logoDMwhite.svg';
     });
     
     const items = ref([
@@ -49,29 +55,28 @@ export default defineComponent({
             job: 'experience.capgeminiJob',
             subtitle: 'experience.capgeminiDates',
             description: 'experience.capgeminiDescription',
-            logo: 'src/assets/logo-capgemini.png'
+            logo: capgeminiLogo
         },
         {
             title: 'experience.scribe',
             job: 'experience.scribeJob',
             subtitle: 'experience.scribeDates',
             description: 'experience.scribeDescription',
-            logo: 'src/assets/logo-scribe.svg',
-            class: 'bg-gray-700 rounded-md p-1'
+            logo: scribeLogo
         },
         {
             title: 'experience.total',
             job: 'experience.totalJob',
             subtitle: 'experience.totalDates',
             description: 'experience.totalDescription',
-            logo: 'src/assets/logo-totalenergies.svg'
+            logo: totalLogo
         },
         {
             title: 'experience.projetdemocratia',
             job: 'experience.projetdemocratiaJob',
             subtitle: 'experience.projetdemocratiaDates',
             description: 'experience.projetdemocratiaDescription',
-            logo: 'src/assets/logo-projetdemocratia.png',
+            logo: projetdemocratiaLogo,
             class: 'border-[1px] border-white rounded-full'
         },
         {
@@ -79,7 +84,7 @@ export default defineComponent({
             job: 'experience.freelanceJob',
             subtitle: 'experience.freelanceDates',
             description: 'experience.freelanceDescription',
-            logo: isDark.value ? 'src/assets/logoDMblack.svg' : 'src/assets/logoDMwhite.svg',
+            logo: isDark.value ? dmLogoBlack : dmLogoWhite,
             class: '!h-7'
         },
     ]);

@@ -23,6 +23,10 @@
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useDark } from '@vueuse/core';
+import fermatWhiteLogo from '/src/assets/logo-fermat-white.svg';
+import fermatBlackLogo from '/src/assets/logo-fermat-black.svg';
+import cytechWhiteLogo from '/src/assets/logo-cytech-white.png';
+import cytechBlackLogo from '/src/assets/logo-cytech-black.png';
 
 export default defineComponent({
   name: 'Education',
@@ -36,16 +40,16 @@ export default defineComponent({
             type: 'education.fermatType',
             description: 'education.fermatDescription',
             date: '2018 - 2020',
-            imageDark: 'src/assets/logo-fermat-white.svg',
-            imageLight: 'src/assets/logo-fermat-black.svg'
+            imageDark: fermatWhiteLogo,
+            imageLight: fermatBlackLogo
         },
         {
             name: 'CY Tech',
             type: 'education.CYTechType',
             description: 'education.CYTechDescription',
             date: '2020 - 2023',
-            imageDark: 'src/assets/logo-cytech-white.png',
-            imageLight: 'src/assets/logo-cytech-black.png'
+            imageDark: cytechWhiteLogo,
+            imageLight: cytechBlackLogo
         }
     ]
 

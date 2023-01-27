@@ -7,7 +7,7 @@
 
         <div class="grid xl:grid-cols-2 gap-x-20 items-center py-10">
             <div class="col-span-1">
-                <img :src="`src/assets/devices/${activeImage}.png`" alt="Mock devices" />
+                <img :src="activeImage" alt="Mock devices" />
                 <p class="text-center opacity-50 italic my-5">{{ t('portfolio.preview') }}</p>
             </div>
             <div class="col-span-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -26,13 +26,21 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
 import { useI18n } from 'vue-i18n';
+import scribe from '/src/assets/devices/scribe.png';
+import projetdemocratia from '/src/assets/devices/projetdemocratia.png';
+import datachallenge from '/src/assets/devices/datachallenge.png';
+import lagamair from '/src/assets/devices/lagamair.png';
+import capitalgame from '/src/assets/devices/capitalgame.png';
+import helene from '/src/assets/devices/helene.png';
+import ekkodesign from '/src/assets/devices/ekkodesign.png';
+import odilemailhe from '/src/assets/devices/odilemailhe.png';
 
 export default defineComponent({
   name: 'Portfolio',
   setup() {
     const { t } = useI18n();
-    const activeImage = ref('scribe');
-    const images = ['scribe', 'projetdemocratia', 'datachallenge', 'lagamair', 'capitalgame', 'helene', 'ekkodesign', 'odilemailhe'];
+    const activeImage = ref(scribe);
+    const images = [scribe, projetdemocratia, datachallenge, lagamair, capitalgame, helene, ekkodesign, odilemailhe];
     const items = ref<{index: number,title: string, description: string, link: string,image:string, isActive: boolean}[]>([]);
 
     const getItems = () => {
@@ -42,7 +50,7 @@ export default defineComponent({
                 title: `portfolio.items[${i}].title`,
                 description: `portfolio.items[${i}].description`,
                 link: `portfolio.items[${i}].link`,
-                image: `portfolio.items[${i}].image`,
+                image: images[i],
                 isActive: i === 0 ? true : false
             })
         }

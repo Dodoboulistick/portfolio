@@ -1,8 +1,8 @@
 <template>
-    <section class="h-screen px-3 lg:px-0" id="hero">
+    <section class="h-screen px-3 pt-6 sm:pt-3 md:pt-0 lg:px-0" id="hero">
         <div class="container h-full flex flex-col lg:flex-row items-center justify-center gap-y-10 lg:justify-around">
-            <img v-if="isDark" src="src/assets/me-suit.png" class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]" alt="hero" />
-            <img v-else src="src/assets/me-unsuit.png" class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]" alt="hero" />
+            <img v-if="isDark" src="/src/assets/me-suit.png" class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]" alt="hero" />
+            <img v-else src="/src/assets/me-unsuit.png" class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]" alt="hero" />
             <div class="sm:w-3/4 lg:w-1/2">
                 <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold">{{ t('hero.title') }}</h2>
                 <h1 class="text-5xl lg:text-6xl xl:text-7xl font-extrabold">{{ t('hero.name') }}</h1>
