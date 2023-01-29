@@ -46,7 +46,7 @@ export default defineComponent({
     const isDark = useDark();
 
     watch(isDark, (value) => {
-        value ? items.value[4].logo = '/src/assets/logoDMblack.svg' : items.value[4].logo = '/src/assets/logoDMwhite.svg';
+        value ? items.value[4].logo = dmLogoBlack : items.value[4].logo = dmLogoWhite;
     });
     
     const items = ref([

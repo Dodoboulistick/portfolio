@@ -18,6 +18,6 @@ body {
   }
 
   .subtitle {
-    @apply text-base text-xl lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
+    @apply text-xl lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
   }
 }
