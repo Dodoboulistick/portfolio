@@ -53,7 +53,7 @@ export default defineComponent({
     const { t, locale } = useI18n();
     const isDark = useDark();
     const toggleDark = useToggle(isDark);
-    const flag = ref(locale.value === frFlag ? gbFlag : frFlag);
+    const flag = ref(locale.value === 'fr' ? gbFlag : frFlag);
     const toggleNav = ref(false);
 
     const navItems = [
