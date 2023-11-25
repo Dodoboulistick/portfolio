@@ -7,6 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.calendly-badge-content span {
+  display: none !important;
+}
+
 /* PERSONAL STYLES */
 @layer components {
   .nav-link {

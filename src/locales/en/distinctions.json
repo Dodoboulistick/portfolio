@@ -2,11 +2,15 @@
   "title": "Prizes and awards",
   "subtitle": "Distinctions",
   "topic": "Category",
-  "results": "Winner",
+  "good_result": "Winner",
+  "bad_result": "Finalist",
   "datachallenge": "DataChallenge IA Pau 2022",
   "datachallengeSubject": "GreenAI",
   "datachallengeDescription": "The challenge was to take an existing web application and improve its interface and templates, both technically and environmentally. On my side, I significantly improved the existing Django web implementation, and I implemented the Carbon scripts that allowed to calculate and display the ecological impact of the queries we made.",
   "databattle": "Databattle IA Pau 2022",
   "databattleSubject": "Vivajob",
-  "databattleDescription": "The challenge was to build a matching solution between companies and job seekers. The solution had to be original, efficient, but also as ecological as possible. My personal contribution was to make a Vuejs web application to visualise the data. I also took care of the API calls on our algorithms to make dynamic chartjs graphics impactful."
+  "databattleDescription": "The challenge was to build a matching solution between companies and job seekers. The solution had to be original, efficient, but also as ecological as possible. My personal contribution was to make a Vuejs web application to visualise the data. I also took care of the API calls on our algorithms to make dynamic chartjs graphics impactful.",
+  "databattle2": "Databattle IA Pau 2023",
+  "databattleSubject2": "Lithology",
+  "databattleDescription2": "The challenge was to build a rock classification solution based on PDF documents containing a column to be analysed. I was in charge of designing the group's web application using VueJS, the architecture and API code using FastAPI, the NoSQL database using Firebase, production using GCP servers and nginx, CI/CD and project management."
 }
