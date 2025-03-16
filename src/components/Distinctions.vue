@@ -39,6 +39,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
+import gold_medal from "/src/assets/gold-medal.png";
+import silver_medal from "/src/assets/silver-medal.png";
 
 export default defineComponent({
   name: "Distinctions",
@@ -51,21 +53,21 @@ export default defineComponent({
         subject: "distinctions.datachallengeSubject",
         description: "distinctions.datachallengeDescription",
         result: "distinctions.good_result",
-        image: "/src/assets/gold-medal.png",
+        image: gold_medal,
       },
       {
         title: "distinctions.databattle",
         subject: "distinctions.databattleSubject",
         description: "distinctions.databattleDescription",
         result: "distinctions.good_result",
-        image: "/src/assets/gold-medal.png",
+        image: gold_medal,
       },
       {
         title: "distinctions.databattle2",
         subject: "distinctions.databattleSubject2",
         description: "distinctions.databattleDescription2",
         result: "distinctions.bad_result",
-        image: "/src/assets/silver-medal.png",
+        image: silver_medal,
       },
     ];
 

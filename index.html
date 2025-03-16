@@ -72,13 +72,15 @@
     <link
       href="https://assets.calendly.com/assets/external/widget.css"
       rel="stylesheet"
+      defer
     />
     <script
       src="https://assets.calendly.com/assets/external/widget.js"
       type="text/javascript"
+      defer
       async
     ></script>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
       window.onload = function () {
         Calendly.initBadgeWidget({
           url: "https://calendly.com/dorian-mailhe?hide_landing_page_details=1&hide_gdpr_banner=1",
@@ -95,6 +97,6 @@
     class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white/90 transition-all duration-300"
   >
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.ts" defer></script>
   </body>
 </html>
