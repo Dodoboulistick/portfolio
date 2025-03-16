@@ -24,10 +24,10 @@
   @apply hover:text-blue-600 transition-all duration-300 cursor-pointer;
 }
 @utility title {
-  @apply text-4xl lg:text-5xl font-extrabold uppercase text-center;
+  @apply text-3xl lg:text-4xl font-extrabold uppercase text-center;
 }
 @utility subtitle {
-  @apply text-xl lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
+  @apply text-base lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
 }
 
 @utility container {

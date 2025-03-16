@@ -12,15 +12,15 @@
 
 <script lang="ts">
 import { useI18n } from "vue-i18n";
-import Navbar from "./components/Navbar.vue";
-import Hero from "./components/Hero.vue";
-import Skills from "./components/Skills.vue";
-import Experience from "./components/Experience.vue";
-import Portfolio from "./components/Portfolio.vue";
-import Education from "./components/Education.vue";
-import Distinctions from "./components/Distinctions.vue";
 import Contact from "./components/Contact.vue";
+import Distinctions from "./components/Distinctions.vue";
+import Education from "./components/Education.vue";
+import Experience from "./components/Experience.vue";
 import Footer from "./components/Footer.vue";
+import Hero from "./components/Hero.vue";
+import Navbar from "./components/Navbar.vue";
+import Portfolio from "./components/Portfolio.vue";
+import Skills from "./components/Skills.vue";
 
 export default {
   name: "App",

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container py-10 px-5 lg:px-0"
+    class="container pt-10 px-5 lg:px-0"
     id="distinctions"
     aria-label="Distinctions et récompenses"
   >
@@ -9,7 +9,7 @@
       <h1 class="title">{{ t("distinctions.title") }}</h1>
     </div>
 
-    <div class="flex flex-col lg:flex-row justify-evenly py-20 gap-10">
+    <div class="flex flex-col lg:flex-row justify-evenly py-10 gap-5 md:gap-10">
       <div
         v-for="item in items"
         class="lg:w-2/5 xl:w-1/3 basis-1/3 bg-gray-50 dark:bg-gray-800 rounded-xl p-5 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -24,7 +24,7 @@
                 ? 'Médaille d\'or'
                 : 'Médaille d\'argent'
             "
-            class="h-28 sm:h-24 lg:h-32 mx-auto flex-none"
+            class="h-28 lg:h-32 mx-auto flex-none"
             width="128"
             height="128"
             loading="lazy"
@@ -41,7 +41,7 @@
             </h4>
           </div>
         </div>
-        <p class="opacity-70">{{ t(item.description) }}</p>
+        <p class="opacity-70 text-sm md:text-base">{{ t(item.description) }}</p>
       </div>
     </div>
   </section>

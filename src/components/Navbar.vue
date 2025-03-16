@@ -68,7 +68,7 @@
     </div>
     <ul
       v-if="toggleNav"
-      class="flex flex-col justify-around py-20 items-center font-medium text-lg capitalize lg:hidden h-full transition-all duration-300"
+      class="flex flex-col justify-evenly py-10 items-center font-medium text-lg capitalize lg:hidden h-[calc(100vh-76px)] transition-all duration-300"
     >
       <li v-for="item of navItems">
         <a :href="item.href" class="nav-link text-2xl" @click="onClickNav">{{
@@ -80,9 +80,9 @@
 </template>
 
 <script lang="ts">
+import { useDark, useToggle } from "@vueuse/core";
 import { defineComponent, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import { useDark, useToggle } from "@vueuse/core";
 import gbFlag from "/src/assets/en.svg";
 import frFlag from "/src/assets/fr.svg";
 

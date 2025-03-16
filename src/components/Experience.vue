@@ -1,6 +1,6 @@
 <template>
   <section
-    class="container py-10"
+    class="container py-5 md:py-10"
     id="experience"
     aria-label="Expérience professionnelle"
   >
@@ -10,12 +10,12 @@
     </div>
 
     <div>
-      <div class="flex flex-col gap-10 py-10 w-5/6 mx-auto">
+      <div class="flex flex-col md:gap-10 gap-5 py-5 md:py-10 md:w-5/6 mx-auto">
         <div
           v-for="item of items"
           class="bg-gray-50 dark:bg-gray-800 shadow-lg p-3 rounded-xl"
         >
-          <h3 class="text-lg text-blue-600 font-semibold lg:hidden">
+          <h3 class="md:text-lg text-blue-600 font-semibold lg:hidden">
             {{ t(item.subtitle) }}
           </h3>
           <div class="flex items-center gap-x-3">
@@ -29,22 +29,28 @@
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg text-blue-600 font-semibold hidden lg:block">
+              <h3
+                class="text-sm md:text-lg text-blue-600 font-semibold hidden lg:block"
+              >
                 {{ t(item.subtitle) }}
               </h3>
-              <h2 class="text-2xl font-bold hidden lg:block">
+              <h2 class="text-xl md:text-2xl font-bold hidden lg:block">
                 {{ t(item.title) }} - {{ t(item.job) }}
               </h2>
-              <h2 class="text-2xl font-bold lg:hidden">{{ t(item.title) }}</h2>
+              <h2 class="text-xl md:text-2xl font-bold lg:hidden">
+                {{ t(item.title) }}
+              </h2>
             </div>
           </div>
-          <h2 class="font-medium opacity-80 text-xl lg:hidden">
+          <h2 class="font-medium opacity-80 md:text-xl lg:hidden">
             {{ t(item.job) }}
           </h2>
           <div
             class="w-1/4 bg-gray-900 dark:bg-white/80 h-[1px] my-3 sm:hidden"
           ></div>
-          <p class="text-base opacity-70">{{ t(item.description) }}</p>
+          <p class="text-sm md:text-base opacity-70">
+            {{ t(item.description) }}
+          </p>
         </div>
       </div>
     </div>
