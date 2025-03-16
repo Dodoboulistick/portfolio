@@ -110,7 +110,7 @@ export default defineComponent({
         subtitle: "experience.freelanceDates",
         description: "experience.freelanceDescription",
         logo: isDark.value ? dmLogoBlack : dmLogoWhite,
-        class: "!h-7",
+        class: "h-7!",
       },
     ]);
 

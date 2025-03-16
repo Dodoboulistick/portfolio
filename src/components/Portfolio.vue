@@ -15,7 +15,7 @@
       <div class="col-span-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div
           v-for="item in items"
-          class="px-5 py-4 rounded-xl shadow-lg bg-gray-50 dark:bg-gray-800 cursor-pointer hover:!border-blue-600 transition-all duration-300"
+          class="px-5 py-4 rounded-xl shadow-lg bg-gray-50 dark:bg-gray-800 cursor-pointer hover:border-blue-600! transition-all duration-300"
           :class="[
             item.isActive
               ? 'border-2 border-blue-600'

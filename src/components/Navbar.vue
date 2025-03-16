@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="p-5 bg-gray-100/70 dark:bg-gray-900/90 backdrop-blur-lg fixed top-0 w-full z-[999] lg:h-fit transition-all duration-300"
+    class="p-5 bg-gray-100/70 dark:bg-gray-900/90 backdrop-blur-lg fixed top-0 w-full z-999 lg:h-fit transition-all duration-300"
     :class="{ 'h-screen': toggleNav }"
   >
     <div class="container flex items-center justify-between">
@@ -36,7 +36,7 @@
             <img
               @click="handleClickOnFlag"
               :src="flag"
-              class="h-5 rounded-sm cursor-pointer"
+              class="h-5 rounded-xs cursor-pointer"
               alt="Flag of the translation language (FR or GB)"
             />
           </li>

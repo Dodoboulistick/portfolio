@@ -1,27 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html,
-body {
-  font-family: "Poppins", sans-serif;
+@custom-variant dark (&:is(.dark *));
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-.calendly-badge-content span {
-  display: none !important;
+@utility nav-link {
+  @apply hover:text-blue-600 transition-all duration-300 cursor-pointer;
+}
+@utility title {
+  @apply text-4xl lg:text-5xl font-extrabold uppercase text-center;
+}
+@utility subtitle {
+  @apply text-xl lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
 }
 
-/* PERSONAL STYLES */
-@layer components {
-  .nav-link {
-    @apply hover:text-blue-600 transition-all duration-300 cursor-pointer;
+@layer utilities {
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
   }
 
-  .title {
-    @apply text-4xl lg:text-5xl font-extrabold uppercase text-center;
+  .calendly-badge-content span {
+    display: none !important;
   }
 
-  .subtitle {
-    @apply text-xl lg:text-2xl uppercase text-center leading-none tracking-[0.7rem] sm:tracking-[1rem] text-blue-600 mb-2;
-  }
+  /* PERSONAL STYLES */
 }
