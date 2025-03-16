@@ -1,5 +1,9 @@
 <template>
-  <section class="h-screen px-3 pt-6 sm:pt-3 md:pt-0 lg:px-0" id="hero">
+  <section
+    class="h-screen px-3 pt-6 sm:pt-3 md:pt-0 lg:px-0"
+    id="hero"
+    aria-label="Présentation"
+  >
     <div
       class="container h-full flex flex-col lg:flex-row items-center justify-center gap-y-10 lg:justify-around"
     >
@@ -7,13 +11,19 @@
         v-if="isDark"
         src="/src/assets/me-suit.webp"
         class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]"
-        alt="Dorian Mailhé in a suit"
+        alt="Dorian Mailhé en costume"
+        width="500"
+        height="750"
+        loading="eager"
       />
       <img
         v-else
         src="/src/assets/me-unsuit.webp"
         class="lg:order-last w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] xl:w-[500px]"
-        alt="Dorian Mailhé in a suit"
+        alt="Dorian Mailhé en chemise"
+        width="500"
+        height="750"
+        loading="eager"
       />
       <div class="sm:w-3/4 lg:w-1/2">
         <h2 class="text-3xl lg:text-4xl xl:text-5xl font-bold">
@@ -29,11 +39,13 @@
           <a
             href="#skills"
             class="text-white/90 bg-linear-to-r from-blue-600 to-blue-500 rounded-md py-2 px-10 shadow-lg shadow-blue-600/30 hover:shadow-none transition-all duration-300"
+            aria-label="Voir mes compétences"
             >{{ t("hero.cta") }}</a
           >
           <a
             href="#contact"
             class="bg-gray-50 dark:bg-gray-800 dark:shadow-none dark:hover:bg-gray-700 rounded-md py-2 px-10 shadow-lg hover:shadow-none transition-all duration-300"
+            aria-label="Me contacter"
             >{{ t("hero.contact") }}</a
           >
         </div>
@@ -43,9 +55,9 @@
 </template>
 
 <script lang="ts">
+import { useDark } from "@vueuse/core";
 import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
-import { useDark } from "@vueuse/core";
 
 export default defineComponent({
   name: "Hero",

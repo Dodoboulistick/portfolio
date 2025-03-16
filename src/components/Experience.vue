@@ -1,5 +1,9 @@
 <template>
-  <section class="container py-10" id="experience">
+  <section
+    class="container py-10"
+    id="experience"
+    aria-label="Expérience professionnelle"
+  >
     <div>
       <h2 class="subtitle">{{ t("experience.subtitle") }}</h2>
       <h1 class="title">{{ t("experience.title") }}</h1>
@@ -19,7 +23,10 @@
               :src="item.logo"
               class="h-10"
               :class="item.class"
-              :alt="`Logo ${item.title}`"
+              :alt="`Logo ${t(item.title)}`"
+              width="40"
+              height="40"
+              loading="lazy"
             />
             <div>
               <h3 class="text-lg text-blue-600 font-semibold hidden lg:block">
@@ -45,15 +52,15 @@
 </template>
 
 <script lang="ts">
+import { useDark } from "@vueuse/core";
 import { defineComponent, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import { useDark } from "@vueuse/core";
-import capgeminiLogo from "/src/assets/logo-capgemini.png";
+import capgeminiLogo from "/src/assets/logo-capgemini.webp";
+import projetdemocratiaLogo from "/src/assets/logo-projetdemocratia.webp";
 import scribeLogo from "/src/assets/logo-scribe.svg";
+import totalLogo from "/src/assets/logo-totalenergies.svg";
 import dmLogoBlack from "/src/assets/logoDMblack.svg";
 import dmLogoWhite from "/src/assets/logoDMwhite.svg";
-import totalLogo from "/src/assets/logo-totalenergies.svg";
-import projetdemocratiaLogo from "/src/assets/logo-projetdemocratia.png";
 
 export default defineComponent({
   name: "Experience",

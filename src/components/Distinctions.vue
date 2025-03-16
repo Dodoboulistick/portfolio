@@ -1,5 +1,9 @@
 <template>
-  <section class="container py-10 px-5 lg:px-0" id="distinctions">
+  <section
+    class="container py-10 px-5 lg:px-0"
+    id="distinctions"
+    aria-label="Distinctions et récompenses"
+  >
     <div>
       <h2 class="subtitle">{{ t("distinctions.subtitle") }}</h2>
       <h1 class="title">{{ t("distinctions.title") }}</h1>
@@ -15,8 +19,15 @@
         >
           <img
             :src="item.image"
-            alt="Medal icon"
+            :alt="
+              item.result === 'distinctions.good_result'
+                ? 'Médaille d\'or'
+                : 'Médaille d\'argent'
+            "
             class="h-28 sm:h-24 lg:h-32 mx-auto flex-none"
+            width="128"
+            height="128"
+            loading="lazy"
           />
           <div
             class="mb-6 mt-5 lg:mt-10 uppercase text-center sm:text-left lg:text-center flex-auto"
@@ -39,8 +50,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
-import gold_medal from "/src/assets/gold-medal.png";
-import silver_medal from "/src/assets/silver-medal.png";
+import gold_medal from "/src/assets/gold-medal.webp";
+import silver_medal from "/src/assets/silver-medal.webp";
 
 export default defineComponent({
   name: "Distinctions",

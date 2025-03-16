@@ -1,5 +1,5 @@
 <template>
-  <section class="container py-10 px-3" id="portfolio">
+  <section class="container py-10 px-3" id="portfolio" aria-label="Portfolio">
     <div>
       <h2 class="subtitle">{{ t("portfolio.subtitle") }}</h2>
       <h1 class="title">{{ t("portfolio.title") }}</h1>
@@ -7,7 +7,13 @@
 
     <div class="grid xl:grid-cols-2 gap-x-20 items-center py-10">
       <div class="col-span-1">
-        <img :src="activeImage" alt="Mock devices" />
+        <img
+          :src="activeImage"
+          alt="Aperçu du site web sur différents appareils"
+          width="600"
+          height="450"
+          loading="lazy"
+        />
         <p class="text-center opacity-50 italic my-5">
           {{ t("portfolio.preview") }}
         </p>
@@ -22,6 +28,10 @@
               : 'border-2 border-gray-50 dark:border-gray-800',
           ]"
           @click="handleClick(item.index)"
+          :aria-label="t(item.title)"
+          role="button"
+          tabindex="0"
+          @keydown.enter="handleClick(item.index)"
         >
           <div
             class="flex flex-row justify-between items-center mb-1 text-left"
@@ -31,9 +41,11 @@
               v-if="item.index === 0"
               :href="t(item.link)"
               target="_blank"
+              rel="noopener"
               class="flex flex-nowrap items-center gap-1 text-lg text-blue-600 hover:bg-blue-600/10 px-2 rounded-md transition-all duration-300"
+              :aria-label="t('portfolio.cta') + ' ' + t(item.title)"
               >{{ t("portfolio.cta") }}
-              <i class="bi bi-arrow-up-right text-sm"></i
+              <i class="bi bi-arrow-up-right text-sm" aria-hidden="true"></i
             ></a>
           </div>
           <p class="opacity-70">{{ t(item.description) }}</p>
@@ -46,14 +58,14 @@
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import scribe from "/src/assets/devices/scribe.png";
-import projetdemocratia from "/src/assets/devices/projetdemocratia.png";
-import datachallenge from "/src/assets/devices/datachallenge.png";
-import lagamair from "/src/assets/devices/lagamair.png";
-import capitalgame from "/src/assets/devices/capitalgame.png";
-import helene from "/src/assets/devices/helene.png";
-import ekkodesign from "/src/assets/devices/ekkodesign.png";
-import odilemailhe from "/src/assets/devices/odilemailhe.png";
+import capitalgame from "/src/assets/devices/capitalgame.webp";
+import datachallenge from "/src/assets/devices/datachallenge.webp";
+import ekkodesign from "/src/assets/devices/ekkodesign.webp";
+import helene from "/src/assets/devices/helene.webp";
+import lagamair from "/src/assets/devices/lagamair.webp";
+import odilemailhe from "/src/assets/devices/odilemailhe.webp";
+import projetdemocratia from "/src/assets/devices/projetdemocratia.webp";
+import scribe from "/src/assets/devices/scribe.webp";
 
 export default defineComponent({
   name: "Portfolio",
